@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HomepageComponent {
 
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  //search
+  search(){
+    console.log("searching");
+  }
+
 }

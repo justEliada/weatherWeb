@@ -1,0 +1,29 @@
+.containter{
+    background-color: aqua;
+
+    .row{
+        background-color: red;
+    }
+    .searchbar{
+        background-color: blue;
+        .searchbar__input{
+            background-color: green;
+            border: 1.5px solid #8b6df8;
+            border-radius: 10px;
+            padding: 20px;
+            max-height: fit-content;
+        }
+
+        button{
+            background-color: #5436c0;
+            border: 1.5px solid #8b6df8;
+            border-radius: 10px;
+            padding: 20px;
+            max-height: fit-content;
+
+
+
+        }
+    }
+}
+
