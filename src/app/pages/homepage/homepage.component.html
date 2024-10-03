@@ -3,14 +3,40 @@
     2. DISPLAY WEATHER DATA FOR THAT LOCATION
 -->
 
-<div class="containter">
-    <div class="row">
-      <div class="searchbar">
-        <h1>Weather App</h1>
-        <input type="text" placeholder="Search for a location">
-        <button (click)="search()">Search</button>
+<div class="container">
+  <div class="row">
+    <div class="col-12 searchbar">
+      <h1>Weather App</h1>
+      <input type="text" [(ngModel)]="location" placeholder="Search for a location">
+      <button (click)="search()">Search</button>
+    </div>
+  </div>
+
+  <!-- Current Weather Data Section -->
+  <div class="row">
+    <div class="col-12 weather-current" *ngIf="currentWeather">
+      <h2>Current Weather for {{ currentWeather.location }}</h2>
+      <p>Temperature: {{ currentWeather.temp }} °C</p>
+      <p>Humidity: {{ currentWeather.humidity }} %</p>
+      <p>Condition: {{ currentWeather.condition }}</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 weather-forecast" *ngIf="weeklyForecast && weeklyForecast.length">
+      <h3>Weekly Forecast</h3>
+      <div class="forecast-day" *ngFor="let day of weeklyForecast">
+        <p>{{ day.date }}: {{ day.temp }} °C, {{ day.condition }}</p>
       </div>
     </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 weather-graph" *ngIf="showGraph">
+      <h3>Temperature Trend</h3>
+      <app-weather-graph [data]="temperatureData"></app-weather-graph>
+    </div>
+  </div>
 </div>
 
 

@@ -7,14 +7,23 @@ import { Component } from '@angular/core';
 })
 export class HomepageComponent {
 
-  constructor() { }
+  location: string = '';
+  currentWeather: any = null;
+  weeklyForecast: any[] = [];
+  temperatureData: any[] = [];
+  showGraph: boolean = false;
 
-  ngOnInit(): void {
-  }
+  constructor(private weatherService: WeatherService) {}
 
-  //search
-  search(){
-    console.log("searching");
+  search() {
+    if (this.location) {
+      this.weatherService.getWeather(this.location).subscribe(data => {
+        this.currentWeather = data.current;
+        this.weeklyForecast = data.forecast;
+        this.temperatureData = data.temperatureTrend;
+        this.showGraph = true;
+      });
+    }
   }
 
 }
