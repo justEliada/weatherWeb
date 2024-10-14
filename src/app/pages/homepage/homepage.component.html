@@ -7,7 +7,7 @@
   <div class="row">
     <div class="col-12 searchbar">
       <h1>Weather App</h1>
-      <input type="text" [(ngModel)]="location" placeholder="Search for a location">
+      <!-- <input type="text" [(ngModel)]="location" placeholder="Search for a location"> -->
       <button (click)="search()">Search</button>
     </div>
   </div>
@@ -34,7 +34,7 @@
   <div class="row">
     <div class="col-12 weather-graph" *ngIf="showGraph">
       <h3>Temperature Trend</h3>
-      <app-weather-graph [data]="temperatureData"></app-weather-graph>
+      <!-- <app-weather-graph [data]="temperatureData"></app-weather-graph> -->
     </div>
   </div>
 </div>
