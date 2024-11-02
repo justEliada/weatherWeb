@@ -23,10 +23,17 @@
         </ul>
       </nav>
     </div>
-  
-
-  <!-- Current Weather Data Section -->
-  <div class="row">
+  </div>
+</div>
+  <!-- Todays Current Weather Data Section -->
+  <div class="current-weather-component">
+    <div class="fist-part">
+      <h1>Todays Weather</h1>
+      <p>Date: 21 Janary</p> 
+      <p>Time: 12:00 PM</p>
+      <hr>
+      <!-- Getting Date Api next -->
+    </div>
     <div class="col-12 weather-current" *ngIf="currentWeather">
       <h2>Current Weather for {{ currentWeather.location }}</h2>
       <p>Temperature: {{ currentWeather.temp }} °C</p>
@@ -50,7 +57,7 @@
       <!-- <app-weather-graph [data]="temperatureData"></app-weather-graph> -->
     </div>
   </div>
-</div>
+
 
 
 <!-- <input type="text" placeholder="Search for a location" [(ngModel)]="location" (keyup.enter)="search()">

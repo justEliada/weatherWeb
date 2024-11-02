@@ -6,12 +6,14 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { IntegratedpageComponent } from './pages/integratedpage/integratedpage.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { StoriesComponentComponent } from './components/stories-component/stories-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    IntegratedpageComponent
+    IntegratedpageComponent,
+    StoriesComponentComponent
   ],
   imports: [
     BrowserModule,
