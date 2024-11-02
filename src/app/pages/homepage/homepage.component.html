@@ -5,12 +5,24 @@
 
 <div class="header-container">
   <div class="row">
-    <h1>Weather App</h1>
+    <img src="./assets/photos/moonWind.png" alt="Weather App Logo" class="logo">
     <div class="col-12 searchbar">
       <input type="text" [(ngModel)]="location" placeholder="Search for a location">
     </div>
   </div>
   
+  <!-- Navbar  -->
+  <div class="nav-bar-menu">
+    <div class="col-12">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#" (click)="search()">Today</a></li>
+          <li><a href="#" (click)="search()">Weekly</a></li>
+          <li><a href="#" (click)="search()">Monthly</a></li>
+          <li><a href="#" (click)="search()">Yearly</a></li>
+        </ul>
+      </nav>
+    </div>
   
 
   <!-- Current Weather Data Section -->
