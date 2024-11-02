@@ -1,29 +1,35 @@
-.containter{
-    background-color: aqua;
-
-    .row{
-        background-color: red;
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .header-container {
+    background-color: #B03052;
+  
+    .row {
+      text-align: center;
+      h1 {
+        color: white;
+        font-size: 2.5rem;
+        margin-top: 20px;
+      }
     }
-    .searchbar{
-        background-color: blue;
-        .searchbar__input{
-            background-color: green;
-            border: 1.5px solid #8b6df8;
-            border-radius: 10px;
-            padding: 20px;
-            max-height: fit-content;
-        }
-
-        button{
-            background-color: #5436c0;
-            border: 1.5px solid #8b6df8;
-            border-radius: 10px;
-            padding: 20px;
-            max-height: fit-content;
-
-
-
-        }
+  
+    .searchbar {
+      display: flex;
+      justify-content: center;
+      input {
+        border: 1.5px solid #8b6df8;
+        border-radius: 10px;
+        padding: 10px;
+        max-height: 100%;
+      }
+      button {
+        background-color: #5436c0;
+        border: 1.5px solid #8b6df8;
+        border-radius: 10px;
+        padding: 20px;
+        max-height: 100%;
+      }
     }
-}
+  }
 
