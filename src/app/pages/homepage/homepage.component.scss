@@ -69,6 +69,7 @@ body {
 .components{
     display: flex;
     background-color: aqua;
+    height: fit-content;
 
     .current-weather-component {
         margin-top: 10px;
@@ -168,7 +169,28 @@ body {
 
     }
 
+}
 
+.astronomy-container{
+    background-color: aquamarine;
+    .grid-for-astronomy{
+        background-color: yellowgreen;
+        height: 250px;
+
+        .slideshow{
+            background-color: blueviolet;
+            display: flex;
+            width: 100%;
+            padding: 5px;
+            height: 60%;
+            .slide{
+                background-color: pink;
+                margin: 5px;
+                width: 20%;
+                height: 90%;
+            }
+        }
+    }
 }
 
 
