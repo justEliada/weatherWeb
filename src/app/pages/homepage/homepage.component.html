@@ -35,14 +35,6 @@
       <hr>
       <!-- Getting Date Api next -->
     </div>
-    <div class="weather-map-component">
-      <div class="inside-view">
-        <div class="col-12">
-          <h2>Weather Map</h2>
-          <img src="./assets/photos/weatherMap.png" alt="Weather Map" class="weather-map-image">
-        </div>
-      </div>
-      </div>
     <div class="col-12 weather-current" *ngIf="currentWeather">
       <h2>Current Weather for {{ currentWeather.location }}</h2>
       <p>Temperature: {{ currentWeather.temp }} °C</p>
@@ -50,11 +42,20 @@
       <p>Condition: {{ currentWeather.condition }}</p>
     </div>
   </div>
-</div>
-
-  <!-- Map Section + template picture -->
-   
-
+  <div class="weather-map-component">
+    <div class="inside-view">
+      <div class="col-12">
+        <h2>Weather Map</h2>
+        <img src="./assets/photos/weatherMap.png" alt="Weather Map" class="weather-map-image">
+      </div>
+    </div>
+    </div>
+    <div class="related-news-component">
+      <div class="col-12">
+        <h2>Related Weather News</h2>
+      </div>
+    </div>
+</div>   
 
 
   <div class="row">
