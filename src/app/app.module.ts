@@ -7,6 +7,7 @@ import { IntegratedpageComponent } from './pages/integratedpage/integratedpage.c
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { StoriesComponentComponent } from './components/stories-component/stories-component.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { StoriesComponentComponent } from './components/stories-component/storie
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
