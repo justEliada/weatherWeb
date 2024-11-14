@@ -8,13 +8,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { StoriesComponentComponent } from './components/stories-component/stories-component.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalComponentComponent } from './pages/modal-component/modal-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     IntegratedpageComponent,
-    StoriesComponentComponent
+    StoriesComponentComponent,
+    ModalComponentComponent
   ],
   imports: [
     BrowserModule,
