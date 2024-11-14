@@ -1,1 +1,8 @@
-<p>modal-component works!</p>
+<div class="modal-backdrop" *ngIf="isOpen">
+    <div class="modal-content">
+      <h2>Modal Title</h2>
+      <p>Modal body content goes here.</p>
+      <button (click)="close()">Close</button>
+    </div>
+  </div>
+  

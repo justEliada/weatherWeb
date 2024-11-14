@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { WeatherServiceService } from '../weather-service.service';
+import { ModalComponentComponent } from '../modal-component/modal-component.component';
+
 
 @Component({
   selector: 'app-homepage',
@@ -7,6 +9,8 @@ import { WeatherServiceService } from '../weather-service.service';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent {
+  @ViewChild(ModalComponentComponent) modal!: ModalComponentComponent;
+
 
   location: string = '';
   currentWeather: any = null;
@@ -14,7 +18,15 @@ export class HomepageComponent {
   temperatureData: any[] = [];
   showGraph: boolean = false;
 
-  constructor(private weatherService: WeatherServiceService) {}
+  constructor(
+    private weatherService: WeatherServiceService,
+    // private modalComponent: ModalComponentComponent
+  ) {}
+  
+  openModal() {
+    this.modal.open();
+    console.log('openModal() called');
+  }
 
   search() {
     if (this.location) {

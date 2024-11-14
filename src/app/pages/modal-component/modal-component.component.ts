@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./modal-component.component.scss']
 })
 export class ModalComponentComponent {
+  isOpen = false;
+
+  open() {
+    this.isOpen = true;
+  }
+
+  close() {
+    this.isOpen = false;
+  }
 
 }
