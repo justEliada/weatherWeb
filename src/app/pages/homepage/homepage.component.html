@@ -78,8 +78,6 @@
     </div>
 </div>  
 
-<button (click)="openModal()">Open Modal</button>
-
 <app-modal-component>
   <h2>Modal Title</h2>
   <p>Modal body content goes here.</p>  
@@ -87,29 +85,28 @@
 
 
 <div class="astronomy-container">
-  <h1>
-    Astronomy Channel
-  </h1>
-  <div class="grid-for-astronomy">
-    <p> Some random data at the moment</p>
+  <p>Daily Dose of The Astronomy Channel</p>
     <div class="slideshow">
-      <div class="slide">
-        <img src="./assets/photos/slide1.jpg" alt="Slide 1">
+      <div class="slide" (click)="openModal()">
+        <img src="./assets/Img/download-1.jpg" alt="Slide 1" >
+        <p>Astronomers detect ancient lonely quasars</p>
       </div>
-      <div class="slide">
-        <img src="./assets/photos/slide2.jpg" alt="Slide 2">
+      <div class="slide" (click)="openModal()">
+        <img src="./assets/Img/download-2.jpg" alt="Slide 2">
+        <p>UNM astronomers on team revealing the magnetic field of a spiral galaxy</p> 
       </div>
-      <div class="slide">
-        <img src="./assets/photos/slide3.jpg" alt="Slide 3">
+      <div class="slide" (click)="openModal()">
+        <img src="./assets/Img/download-3.jpg" alt="Slide 3">
+        <p>11 Must see events in 2025</p>      </div>
+      <div class="slide" (click)="openModal()">
+        <img src="./assets/Img/download-4.jpg" alt="Slide 4">
+        <p>A strong meteor shower to start the year</p>
       </div>
-      <div class="slide">
-        <img src="./assets/photos/slide4.jpg" alt="Slide 4">
-      </div>
-      <div class="slide">
-        <img src="./assets/photos/slide5.jpg" alt="Slide 5">
+      <div class="slide" (click)="openModal()">
+        <img src="./assets/Img/download.jpg" alt="Slide 5">
+        <p>Pictures of Glaxies</p>
       </div>
     </div>
-  </div>
 </div>
 
 

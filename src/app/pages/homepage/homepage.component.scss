@@ -176,28 +176,38 @@ body {
 
 }
 
-.astronomy-container{
+.astronomy-container {
+    padding-top: 10px;
     background-color: aquamarine;
-    .grid-for-astronomy{
-        background-color: yellowgreen;
-        height: 250px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: semi-bold;
+    font-size: 20px;
 
-        .slideshow{
+        .slideshow {
             background-color: blueviolet;
             display: flex;
             width: 100%;
             padding: 5px;
             height: 60%;
-            .slide{
+            padding-left: 0px;
+            padding-right: 0px;
+            overflow: hidden;
+
+            .slide {
                 background-color: pink;
                 margin: 5px;
                 width: 20%;
-                height: 90%;
+                height: 100%;
+
+                img {
+                    width: 200px;
+                    height: 150px;
+                    
+                }
             }
         }
-    }
 }
-
 
 
 
@@ -205,11 +215,12 @@ body {
     background-color: #4A628A;
     color: white;
     text-align: center;
-    padding: 10px;
+    margin: 0px;
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 20px;
     font-size: 15px;
     font-weight: bold;
+    overflow: hidden; 
 }

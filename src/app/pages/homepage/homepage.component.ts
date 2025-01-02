@@ -10,9 +10,7 @@ import { ModalComponentComponent } from '../modal-component/modal-component.comp
 })
 export class HomepageComponent {
   @ViewChild(ModalComponentComponent) modal!: ModalComponentComponent;
-
-
-  location: string = '';
+  location: string = ''; //city name
   currentWeather: any = null;
   weeklyForecast: any[] = [];
   temperatureData: any[] = [];
