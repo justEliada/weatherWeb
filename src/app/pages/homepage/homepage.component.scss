@@ -68,7 +68,6 @@ body {
 
 .components{
     display: flex;
-    background-color: aqua;
     height: fit-content;
 
     .current-weather-component {
@@ -82,7 +81,6 @@ body {
         margin: left;
         height: 50%;
         margin-left: 10px;
-        background-color: yellowgreen;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     
         .fist-part{
@@ -112,7 +110,6 @@ body {
     }
 
 .weather-map-component{
-        background-color: blue;
         margin-top: 10px;
         display: flex;
         justify-content: left;
@@ -178,14 +175,16 @@ body {
 
 .astronomy-container {
     padding-top: 10px;
-    background-color: aquamarine;
     text-align: center;
+    background-color: #4A628A;
     font-family: "Times New Roman", Times, serif;
+    color: white;
     font-weight: semi-bold;
     font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 
         .slideshow {
-            background-color: blueviolet;
             display: flex;
             width: 100%;
             padding: 5px;
@@ -193,9 +192,9 @@ body {
             padding-left: 0px;
             padding-right: 0px;
             overflow: hidden;
+            background-color: #364866;
 
             .slide {
-                background-color: pink;
                 margin: 5px;
                 width: 20%;
                 height: 100%;
