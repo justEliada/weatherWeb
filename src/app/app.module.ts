@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { StoriesComponentComponent } from './components/stories-component/stories-component.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalComponentComponent } from './pages/modal-component/modal-component.component';
+import { ToastComponent } from './components/toast/toast/toast.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ModalComponentComponent } from './pages/modal-component/modal-component
     HomepageComponent,
     IntegratedpageComponent,
     StoriesComponentComponent,
-    ModalComponentComponent
+    ModalComponentComponent,
+    ToastComponent
   ],
   imports: [
     BrowserModule,
