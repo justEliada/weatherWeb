@@ -9,7 +9,6 @@ import { FormsModule } from '@angular/forms';
 import { StoriesComponentComponent } from './components/stories-component/stories-component.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalComponentComponent } from './pages/modal-component/modal-component.component';
-import { ToastComponent } from './components/toast/toast/toast.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +17,15 @@ import { ToastComponent } from './components/toast/toast/toast.component';
     IntegratedpageComponent,
     StoriesComponentComponent,
     ModalComponentComponent,
-    ToastComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    BrowserModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
