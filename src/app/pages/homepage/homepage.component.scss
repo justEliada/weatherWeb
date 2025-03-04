@@ -158,17 +158,35 @@ body {
 
     .related-news-component{
         display: grid;
-        background-color: yellowgreen;
         margin-left:10px;
         margin-top: 10px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
+        h2 {
+            margin: 0px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
         .inside-data{
-            background-color: red;
             display: grid;
+            margin: 20px;
+        
             
             .news{
-                background-color: yellow;
+                max-width: 100%;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+
+                h3 {
+                    margin: 0px;
+                    margin-top: 10px;
+                    color: #4A628A;
+                    font-weight: 800;
+
+                }
+                
             }
         }
 
